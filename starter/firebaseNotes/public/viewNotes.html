@@ -35,6 +35,25 @@
         <div id="app" class="columns is-multiline">
           <!-- Note cards will render here -->
         </div>
+
+        <div class="modal" id="editNoteModal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Edit Your Note!</p>
+                <button class="delete" aria-label="close" onclick="closeModal()"></button>
+            </header>
+            <section class="modal-card-body">
+                <input class = "input is-normal" id="editTitleInput" type ="text"> 
+                <input class = "input is-normal" id="editNoteInput" type ="text">
+         </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" onclick="saveChanges()">Save changes</button>
+                <button class="button" onclick="closeModal()">Cancel</button>
+            </footer>
+        </div>
+    </div>       
+        
       </div>
     </div>
     <footer class="footer">
